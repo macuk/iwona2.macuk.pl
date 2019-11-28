@@ -10,11 +10,17 @@
 
 <main role="main" class="container">
 
-  <h1>Lista wydarzeń</h1>
+  <h1>Lista wydarzeń (old code)</h1>
   <iframe
     src="https://event-list.konfeo-staging.com/pl/9a78a93f-6eec-49db-9d26-98329877d079"
     frameborder="0" width="100%" scrolling="auto" style="min-height: 500px">
   </iframe>
+  
+  <h1>Lista wydarzeń (new code)</h1>
+  <style>iframe { width: 1px; min-width: 100%; }</style>
+  <iframe src="https://event-list.konfeo-staging.com/pl/9a78a93f-6eec-49db-9d26-98329877d079"
+  id="event-list" onload="iFrameResize({}, '#event-list')" frameborder="0"></iframe>
+  <script type="text/javascript" src="https://event-list.konfeo-staging.com/iframeResizer-4.min.js"></script>
   
   <h1>test paid</h1>
   <style>iframe { width: 1px; min-width: 100%; }</style>
